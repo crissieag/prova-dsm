@@ -1,0 +1,31 @@
+<mat-card class="container">
+	<mat-card-header>
+		<mat-card-title> Listar Jogos </mat-card-title>
+	</mat-card-header>
+	<mat-card-content>
+		<table>
+			<tr>
+				<th>#</th>
+				<th>Selecao A</th>
+				<th>&nbsp;</th>
+				<th>&nbsp;</th>
+				<th>&nbsp;</th>
+				<th>Selecao B</th>
+				<th>&nbsp;</th>
+			</tr>
+			<tr *ngFor="let palpite of jogos" #forPalpite>
+				<td>{{ palpite.id }}</td>
+				<td>{{ palpite.selecaoA.nome }}</td>
+				<td>{{ palpite.placarA }}</td>
+				<td>x</td>
+				<td>{{ palpite.placarB }}</td>
+				<td>{{ palpite.selecaoB.nome }}</td>
+				<td>
+					<button routerLink="/pages/jogo/palpitar/{{ palpite.id }}">
+						Palpitar
+					</button>
+				</td>
+			</tr>
+		</table>
+	</mat-card-content>
+</mat-card>

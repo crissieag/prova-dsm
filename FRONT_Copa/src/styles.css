@@ -1,0 +1,38 @@
+/* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+	height: 100%;
+}
+body {
+	margin: 0;
+	font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+button {
+	background-color: #f44336;
+	color: #ffffff;
+	padding: 15px 10px;
+	width: 150px;
+	border: none;
+	border-radius: 3px;
+	font-weight: bold;
+	margin: 0 auto;
+}
+
+button:hover {
+	color: #f44336;
+	background-color: #ffffff;
+    border:1px solid #f44336;
+}
+
+
+.container {
+	margin: 18px;
+
+}
+
+.contentCard {
+	display: flex;
+	flex-direction: column;
+}

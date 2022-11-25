@@ -1,0 +1,34 @@
+<mat-card class="box">
+	<mat-card-header>
+		<mat-card-title> Palpitar no Jogo </mat-card-title>
+	</mat-card-header>
+	<mat-card-content class="contentCard">
+		<mat-form-field id="selecaoA">
+			<input
+				matInput
+				placeholder="{{ jogo.selecaoA.nome }}"
+				type="text"
+				id="txtData"
+				disabled
+			/>
+		</mat-form-field>
+
+		<mat-form-field floatLabel="never" id="placarA" class="input">
+			<input matInput type="text" placeholder="0" [(ngModel)]="placarA" />
+		</mat-form-field>
+
+		<mat-form-field id="selecaoB">
+			<input
+				matInput
+				placeholder="{{ jogo.selecaoB.nome }}"
+				type="text"
+				id="txtData2"
+				disabled
+			/>
+		</mat-form-field>
+		<mat-form-field floatLabel="never" id="placarB" class="input">
+			<input matInput type="text" placeholder="0" [(ngModel)]="placarB" />
+		</mat-form-field>
+		<button class="btnCadastrar" (click)="palpitar()">Palpitar</button>
+	</mat-card-content>
+</mat-card>

@@ -1,0 +1,18 @@
+.input {
+    width: 50%;
+    display: block;
+}
+
+.container{
+    margin: 18px;
+}
+
+.container {
+    margin: 18px;
+
+}
+
+.contentCard {
+    display: flex;
+    flex-direction: column;
+}
